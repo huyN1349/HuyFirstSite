@@ -30,12 +30,43 @@
 ul {
   list-style: none;
 }
+
+/*styling the social media hover features*/
 .social-media-a {
-  color: #393e46;
+  color: #00adb5;
 }
 .social-media-a:hover {
   color: #222831;
 }
-.fa-stack {
-  font-size: 0.5em;
+
+.header-icon-bg {
+  color: #00adb5;
+}
+
+.title-square {
+  color: #00adb5;
+}
+
+.resume, .portfolio, .contact-me, .skills {
+  padding: 110px 20px 0 20px;
+}
+
+.indent-text {
+  padding: 0 0 0 78px;
+}
+
+h2 {
+  padding: 0 0 40px 0;
+}
+
+.contact-field {
+  margin: 0 0 10px 0;
+  background-color: #222831;
+  color: #585858;
+
+}
+.contact-field:focus {
+  background-color: #222831;
+  border: 1px solid #00adb5;
+  color: white;
 }

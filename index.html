@@ -1,123 +1,236 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Huy Nguyen - A Programmer by Night</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav-bg">
-      <a class="navbar-brand" href="#">Huy Nguyen</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="nav nav-pills nav-fill ml-auto">
-          <!---
+<head>
+  <meta charset="utf-8">
+  <title>Huy Nguyen - A Programmer by Night</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav-bg">
+    <a class="navbar-brand" href="#">Huy Nguyen</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav nav-pills nav-fill ml-auto">
+        <!---
           Need to add flaticon in the navbar
           .nav-icon pushes text to next line
           .nav-hover the background color changes
           -->
-          <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#about-me"><img src="images/people-light.png" alt="people-light" class="nav-icon">About Me</a></li>
-          <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#projects"><img src="images/project-light.png" alt="project-light" class="nav-icon">Projects</a></li>
-          <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#projects"><img src="images/skill-light.png" alt="skill-light" class="nav-icon">Skills</a></li>
-          <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#experience"><img src="images/resume-light.png" alt="resume-light" class="nav-icon">Experience</a></li>
-          <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#contact-me"><img src="images/message-light.png" alt="message-light" class="nav-icon">Contact Me</a></li>
-        </ul>
-      </div>
-    </nav>
+        <li class="nav-item active"><a class="nav-link nav-hover nav-text" href="#about-me"><img src="images/people-light.png" alt="people-light" class="nav-icon">About Me</a></li>
+        <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#portfolio"><img src="images/project-light.png" alt="project-light" class="nav-icon">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#skills"><img src="images/skill-light.png" alt="skill-light" class="nav-icon">Skills</a></li>
+        <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#resume"><img src="images/resume-light.png" alt="resume-light" class="nav-icon">Resume</a></li>
+        <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#contact-me"><img src="images/message-light.png" alt="message-light" class="nav-icon">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <div class="top-container" id="about-me">
-      <div class="profile-pic text-center">
-        <img src="images/mypic-200.png" alt="mypic" class="mypic">
+  <div class="top-container" id="about-me">
+    <div class="profile-pic text-center">
+      <img src="images/mypic-200.png" alt="mypic" class="mypic">
+    </div>
+    <div class="profile-text text-center body-text-light">
+      <h1>Hi, I'm Huy Nguyen</h1>
+      <p>I am a Project Manager by day and a Programmer by night</p>
+    </div>
+    <div class="social-media row justify-content-center">
+      <ul class="nav">
+        <li>
+          <a href="#" class="social-media-a">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-media-a">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-media-a">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="middle-container body-text-light">
+    <div class="portfolio" id="portfolio">
+      <h2 class="text-center"><span class="title-square"><i class="fas fa-th-list"></i></span> Portfolio <span class="title-square"><i class="fas fa-th-list"></i></span></h2>
+      <div class="portfolio-row">
+        <img class="" src="" alt="">
+        <h3>Lorem & Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
       </div>
-      <div class="profile-text text-center body-text-light">
-        <h1>Hi, I'm Huy Nguyen</h1>
-        <p>I am a Project Manager by day and a Programmer by night</p>
-      </div>
-      <div class="social-media row justify-content-center">
-        <ul class="nav">
-          <li>
-            <a href="#" class="social-media-a">
-              <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="social-media-a">
-              <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="social-media-a">
-              <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
+
+      <div class="portfolio-row">
+        <img class="" src="" alt="">
+        <h3>Lorem Ipsum Dolor</h3>
+        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
       </div>
     </div>
 
-
-    <div class="middle-container body-text-light">
-      <div class="experience" id="experience">
-        <h2>Experience</h2>
-        <div class="experience-row">
-          <img class="" src="" alt="">
-          <h3>Lorem & Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-        </div>
+    <div class="skills" id="skills">
+      <h2 class="text-center"><span class="title-square"><i class="fas fa-cog"></i></span> Skills <span class="title-square"><i class="fas fa-cog"></i></span></h2>
+      <div class="skills-row">
+        <img class="" src="" alt="">
+        <h3>Lorem & Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
       </div>
 
-        <div class="projects" id="projects">
-          <h2>Projects</h2>
-          <div class="projects-row">
-            <img class="" src="" alt="">
-            <h3>Lorem & Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+      <div class="skills-row">
+        <img class="" src="" alt="">
+        <h3>Lorem Ipsum Dolor</h3>
+        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+      </div>
+    </div>
+    <!-- Resume Section -->
+    <div class="resume" id="resume">
+      <h2 class="text-center"><span class="title-square"><i class="fas fa-user-tie"></i></span> Resume <span class="title-square"><i class="fas fa-user-tie"></i></span></h2>
+      <div class="row">
+        <div class="left-row col-md">
+          <h3>
+            <span class="fa-stack header-icon-bg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="far fa-id-badge fa-stack-1x fa-inverse"></i>
+            </span> Work Experience
+          </h3>
+          <div class="row">
+            <div class="title-left col-sm-8">
+              <h4 class="indent-text">Company A</h4>
+            </div>
+            <div class="year-right col-sm-4">
+              <h4 class="text-right">1990-2000</h4>
+            </div>
           </div>
-
-        <div class="projects-row">
+          <h5 class="indent-text">Job Title</h5>
+          <p class="indent-text">Job Description: Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+          <!-- -->
+          <div class="row">
+            <div class="title-left col-sm-8">
+              <h4 class="indent-text">Company B</h4>
+            </div>
+            <div class="year-right col-sm-4">
+              <h4 class="text-right">1990-2000</h4>
+            </div>
+          </div>
+          <h5 class="indent-text">Job Title</h5>
+          <p class="indent-text">Job Description: Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+          <!-- -->
+          <div class="row">
+            <div class="title-left col-sm-8">
+              <h4 class="indent-text">Company C</h4>
+            </div>
+            <div class="year-right col-sm-4">
+              <h4 class="text-right">1990-2000</h4>
+            </div>
+          </div>
+          <h5 class="indent-text">Job Title</h5>
+          <p class="indent-text">Job Description: Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+          <!-- -->
           <img class="" src="" alt="">
-          <h3>Lorem Ipsum Dolor</h3>
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+          <h3><span class="fa-stack header-icon-bg"><i class="fas fa-circle fa-stack-2x"></i><i class="fas fa-award fa-stack-1x fa-inverse"></i></span> Certificates</h3>
+          <p class="indent-text">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+        </div>
+
+        <div class="right-row  col-md">
+
+          <h3>
+            <span class="fa-stack header-icon-bg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-user-graduate fa-stack-1x fa-inverse"></i>
+            </span> Education</h3>
+          <div class="row">
+            <div class="title-left col-sm-8">
+              <h4 class="indent-text">School A</h4>
+            </div>
+            <div class="year-right col-sm-4">
+              <h4 class="text-right">1990-2000</h4>
+            </div>
+          </div>
+          <h5 class="indent-text">Major</h5>
+          <p class="indent-text">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+          <!-- -->
+          <div class="row">
+            <div class="title-left col-sm-8">
+              <h4 class="indent-text">School B</h4>
+            </div>
+            <div class="year-right col-sm-4">
+              <h4 class="text-right">1990-2000</h4>
+            </div>
+          </div>
+          <h5 class="indent-text">Major</h5>
+          <p class="indent-text">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+          <!-- -->
+          <div class="row">
+            <div class="title-left col-sm-8">
+              <h4 class="indent-text">School C</h4>
+            </div>
+            <div class="year-right col-sm-4">
+              <h4 class="text-right">1990-2000</h4>
+            </div>
+          </div>
+          <h5 class="indent-text">Major</h5>
+          <p class="indent-text">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+
+
+
+          <h3><span class="fa-stack header-icon-bg"><i class="fas fa-circle fa-stack-2x"></i><i class="far fa-futbol fa-stack-1x fa-inverse"></i></span> Hobbies</h3>
+          <p class="indent-text">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
         </div>
       </div>
-
-      <div class="contact-me" id="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-        <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
-      </div>
     </div>
 
 
-    <div class="bottom-container body-text-light">
-      <div class="row text-white">
-        <a class="col-sm text-white" href="https://www.linkedin.com/">LinkedIn</a>
-        <a class="col-sm" href="https://twitter.com/">Twitter</a>
-        <a class="col-sm" href="https://www.appbrewery.co/">Website</a>
+
+    <div class="contact-me" id="contact-me">
+      <h2 class="text-center"><span class="title-square"><i class="fas fa-quote-left"></i></span> Contact Me <span class="title-square"><i class="fas fa-quote-right"></i></span></h2>
+      <h3>Let's Keep In Touch</h3>
+      <div class="row">
+        <form class="contact-form col-sm-7" action="#" method="post">
+          <div class="form-group">
+            <input class="form-control contact-field" type="text" placeholder="Your Name">
+            <input class="form-control contact-field" type="text" placeholder="Company">
+            <input class="form-control contact-field" type="email" placeholder="Your Email">
+            <input class="form-control contact-field" type="text" placeholder="Your Phone Number">
+            <textarea class="form-control contact-field" name="name" rows="6" placeholder="Write Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-info" name="submit">Submit</button>
+        </form>
+
       </div>
 
-      <p class="col-sm-12">© 2019 Copyright Huy Nguyen</p>
-    </div>
+      </div>
 
-  </body>
+    </div>
+  </div>
+
+
+  <div class="bottom-container body-text-light">
+    <p class="col-sm-12 text-center">© 2019 Copyright Huy Nguyen</p>
+  </div>
+
+</body>
 
 </html>
