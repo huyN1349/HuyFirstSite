@@ -1,42 +1,56 @@
 .nav-bg {
-  background-color: #00adb5;
+  background-color: rgba(10,25,47,1) !important;
+  color: rgb(220,220,220);
+}
+
+body{
+  background-color: rgba(10,25,47,1) !important;
+  color: rgba(220,220,220,0.8);
 }
 
 .top-container {
-  background-color: #00adb5;
-  padding: 200px 0 150px 0;
+  max-width: 1000px;
+  padding: 100px 0 100px 0;
+  text-align: center;
 }
+
 .middle-container, .bottom-container {
-  background-color: #393e46;
+  max-width: 1000px;
 }
+
 .nav-icon {
   display: block;
   margin: auto;
 }
+
 .nav-text{
-  color: white;
+  color: rgba(220,220,220,0.8);
+  font-size: 150%;
 }
+
 .nav-hover:hover{
-  background-color: #222831;
-  color: white;
+  color: #00adb5;
 }
+
 .body-text-light{
-  color: #eeeeee;
+  color: rgba(220,220,220,0.8);
+  font-size: 150%;
 }
 
 .social-icon {
   margin: auto;
 }
+
 ul {
   list-style: none;
 }
 
 /*styling the social media hover features*/
 .social-media-a {
-  color: #00adb5;
+  color: rgba(10,25,47,0.95);
 }
 .social-media-a:hover {
-  color: #222831;
+  color: #00adb5;
 }
 
 .header-icon-bg {
@@ -52,11 +66,13 @@ ul {
 }
 
 .indent-text {
-  padding: 0 0 0 78px;
+  padding: 0 0 0 0;
 }
 
 h2 {
   padding: 0 0 40px 0;
+  font-size: 180%;
+  font-weight: bold;
 }
 
 .contact-field {
