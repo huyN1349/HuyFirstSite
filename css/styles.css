@@ -3,13 +3,13 @@ html {
 }
 
 .nav-bg {
-  background-color: rgba(10,25,47,1) !important;
-  color: rgb(220,220,220);
+  background-color: rgba(10, 25, 47, 1) !important;
+  color: rgb(220, 220, 220);
 }
 
-body{
-  background-color: rgba(10,25,47,1) !important;
-  color: rgba(220,220,220,0.8);
+body {
+  background-color: rgba(10, 25, 47, 1) !important;
+  color: rgba(220, 220, 220, 0.8);
   font-size: 120%;
 }
 
@@ -31,17 +31,20 @@ body{
   width: 30px;
 }
 
-.nav-text{
-  color: rgba(220,220,220,0.6);
+.nav-text {
+  color: rgba(220, 220, 220, 0.6);
 }
 
 .nav-text:hover, .nav-text:active, .nav-text:focus {
   color: #00adb5;
 }
 
-.body-text-light{
-  color: rgba(220,220,220,0.8);
+.flex-row .flex-column .nav-text {
+  padding-bottom: 20px;
+}
 
+.body-text-light {
+  color: rgba(220, 220, 220, 0.8);
 }
 
 .social-icon {
@@ -54,8 +57,9 @@ ul {
 
 /*styling the social media hover features*/
 .social-media-a {
-  color: rgba(10,25,47,0.95);
+  color: rgba(10, 25, 47, 0.95);
 }
+
 .social-media-a:hover {
   color: #00adb5;
 }
@@ -87,8 +91,8 @@ h2 {
   background-color: #222831;
   color: #585858;
   max-width: 900px;
-
 }
+
 .contact-field:focus {
   background-color: #222831;
   border: 1px solid #00adb5;
@@ -96,7 +100,7 @@ h2 {
 }
 
 .btn-info {
-  background-color: rgba(10,25,47,1);
+  background-color: rgba(10, 25, 47, 1);
   color: #00adb5;
   border: 2px solid #00adb5;
   font-size: 20px;
@@ -104,32 +108,44 @@ h2 {
 }
 
 .btn-info:hover {
-  background-color: rgba(0,173,181,0.1);
-  color: rgb(0,173,181);
+  background-color: rgba(0, 173, 181, 0.1);
+  color: rgb(0, 173, 181);
 }
 
 .pentagon {
-background-color: #00adb5;
--webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-height: 60px;
-width: 60px;
-position: relative;
+  background-color: #00adb5;
+  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  height: 60px;
+  width: 60px;
+  position: relative;
 }
 
 .pentagon-overlay {
-content: '';
--webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-height: 50px;
-width: 50px;
-background-color: rgba(10,25,47,1);
-display: block;
-position: absolute;
-top: 5px;
-left: 5px;
-padding: 11px;
-text-align: center;
-color: #00adb5;
-font-weight: bold;
+  content: '';
+  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  height: 50px;
+  width: 50px;
+  background-color: rgba(10, 25, 47, 1);
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 11px;
+  text-align: center;
+  color: #00adb5;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 979px) {
+  body {
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 170%;
+  }
 }
