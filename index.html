@@ -16,7 +16,10 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav-bg">
-    <a class="navbar-brand" href="#">Huy Nguyen</a>
+    <a class="navbar-brand pentagon" href="#">
+      <div class="pentagon-overlay">HN
+      </div>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,11 +30,11 @@
           .nav-icon pushes text to next line
           .nav-hover the background color changes
           -->
-        <li class="nav-item active"><a class="nav-link nav-hover nav-text" href="#about-me"><img src="images/people-light.png" alt="people-light" class="nav-icon">Intro</a></li>
-        <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#portfolio"><img src="images/project-light.png" alt="project-light" class="nav-icon">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#skills"><img src="images/skill-light.png" alt="skill-light" class="nav-icon">Skills</a></li>
-        <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#resume"><img src="images/resume-light.png" alt="resume-light" class="nav-icon">Experience</a></li>
-        <li class="nav-item"><a class="nav-link nav-hover nav-text" href="#contact-me"><img src="images/message-light.png" alt="message-light" class="nav-icon">Contact</a></li>
+        <li class="nav-item"><a class="nav-link nav-text" href="#about-me"><img src="images/people-light.png" alt="people-light" class="nav-icon nav-text">Intro</a></li>
+        <li class="nav-item"><a class="nav-link nav-text" href="#portfolio"><img src="images/project-light.png" alt="project-light" class="nav-icon nav-text">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link nav-text" href="#skills"><img src="images/skill-light.png" alt="skill-light" class="nav-icon">Skills</a></li>
+        <li class="nav-item"><a class="nav-link nav-text" href="#experience"><img src="images/resume-light.png" alt="resume-light" class="nav-icon">Experience</a></li>
+        <li class="nav-item"><a class="nav-link nav-text" href="#contact-me"><img src="images/message-light.png" alt="message-light" class="nav-icon">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -74,27 +77,11 @@
       </div>
     </div>
 
-    <div class="transition-container">
-    </div>
-
     <div class="middle-container body-text-light">
-      <div class="portfolio" id="portfolio">
-        <h2 class="text-center"><span class="title-square"><i class="fas fa-th-list"></i></span> PORTFOLIO <span class="title-square"><i class="fas fa-th-list"></i></span></h2>
-        <div class="portfolio-row">
-          <img class="" src="" alt="">
-          <h3>Lorem & Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-        </div>
 
-        <div class="portfolio-row">
-          <img class="" src="" alt="">
-          <h3>Lorem Ipsum Dolor</h3>
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-        </div>
-      </div>
 
       <div class="skills" id="skills">
-        <h2 class="text-center"><span class="title-square"><i class="fas fa-cog"></i></span> SKILLS <span class="title-square"><i class="fas fa-cog"></i></span></h2>
+        <h2 class="text-center"><span class="title-square"><i class="fas fa-cog"></i></span> Skills <span class="title-square"><i class="fas fa-cog"></i></span></h2>
         <div class="skills-row">
           <img class="" src="" alt="">
           <h3>Lorem & Ipsum</h3>
@@ -108,62 +95,59 @@
         </div>
       </div>
       <!-- Resume Section -->
-      <div class="resume" id="resume">
-        <h2 class="text-center"><span class="title-square"><i class="fas fa-user-tie"></i></span> RESUME <span class="title-square"><i class="fas fa-user-tie"></i></span></h2>
-<div class="nav">
-  <h3>
-    <span class="fa-stack header-icon-bg">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="far fa-id-badge fa-stack-1x fa-inverse"></i>
-    </span> Work Experience
-  </h3>
-  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-  </div>
-  <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat.</div>
-    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-  </div>
-</div>
-
-
-        <h3>
-          <span class="fa-stack header-icon-bg">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fas fa-award fa-stack-1x fa-inverse"></i>
-          </span> Certificates
-        </h3>
-
-        <h3>
-          <span class="fa-stack header-icon-bg">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fas fa-user-graduate fa-stack-1x fa-inverse"></i>
-          </span> Education
-        </h3>
-
-        <h3>
-          <span class="fa-stack header-icon-bg">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="far fa-futbol fa-stack-1x fa-inverse"></i>
-          </span> Hobbies
-        </h3>
-
-
+      <div class="experience" id="experience">
+        <h2 class="text-left"><span class="title-square"><i class="fas fa-id-badge"></i></span> Experience <span class="title-square"><i class="fas fa-id-badge"></i></span></h2>
       </div>
+
+  <div class="d-flex flex-row">
+    <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link nav-text" id="v-pills-job0-tab" data-toggle="pill" href="#v-pills-job0" role="tab" aria-controls="v-pills-job0" aria-selected="true">Bayer</a>
+      <a class="nav-link nav-text" id="v-pills-job2-tab" data-toggle="pill" href="#v-pills-job2" role="tab" aria-controls="v-pills-job2" aria-selected="false">SVCW</a>
+      <a class="nav-link nav-text" id="v-pills-job3-tab" data-toggle="pill" href="#v-pills-job3" role="tab" aria-controls="v-pills-job3" aria-selected="false">Intematix</a>
     </div>
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-job0" role="tabpanel" aria-labelledby="v-pills-job0-tab">Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat.</div>
+      <div class="tab-pane fade" id="v-pills-job2" role="tabpanel" aria-labelledby="v-pills-job2-tab">Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui.</div>
+      <div class="tab-pane fade" id="v-pills-job3" role="tabpanel" aria-labelledby="v-pills-job3-tab">Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat</div>
+    </div>
+  </div>
+
+  <div class="education" id="education">
+    <h2 class="text-center"><span class="title-square"><i class="fas fa-user-graduate"></i></span> Education <span class="title-square"><i class="fas fa-user-graduate"></i></span></h2>
+  </div>
+
+  <div class="certificate" id="certificate">
+    <h2 class="text-left"><span class="title-square"><i class="fas fa-award"></i></span> Certificates <span class="title-square"><i class="fas fa-award"></i></span></h2>
+  </div>
+
+
+  <div class="portfolio" id="portfolio">
+    <h2 class="text-center"><span class="title-square"><i class="fas fa-th-list"></i></span> Projects <span class="title-square"><i class="fas fa-th-list"></i></span></h2>
+    <div class="portfolio-row">
+      <img class="" src="" alt="">
+      <h3>Lorem & Ipsum</h3>
+      <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+    </div>
+
+    <div class="portfolio-row">
+      <img class="" src="" alt="">
+      <h3>Lorem Ipsum Dolor</h3>
+      <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+    </div>
+  </div>
+
+
+
+
+
 
 
 
     <div class="contact-me" id="contact-me">
-      <h2 class="text-center"><span class="title-square"><i class="fas fa-quote-left"></i></span> CONTACT ME <span class="title-square"><i class="fas fa-quote-right"></i></span></h2>
+      <h2 class="text-center"><span class="title-square"><i class="fas fa-quote-left"></i></span> Contact Me <span class="title-square"><i class="fas fa-quote-right"></i></span></h2>
       <h3>Let's Keep In Touch</h3>
-      <div class="row">
-        <form class="contact-form col-sm-7" action="#" method="post">
+      <div>
+        <form class="contact-form text-center" action="#" method="post">
           <div class="form-group">
             <input class="form-control contact-field" type="text" placeholder="Your Name">
             <input class="form-control contact-field" type="text" placeholder="Company">
@@ -171,7 +155,7 @@
             <input class="form-control contact-field" type="text" placeholder="Your Phone Number">
             <textarea class="form-control contact-field" name="name" rows="6" placeholder="Write Your Message"></textarea>
           </div>
-          <button type="submit" class="btn btn-info" name="submit">Submit</button>
+          <button type="submit" class="btn btn-info" name="submit">Email Me</button>
         </form>
 
       </div>
@@ -179,7 +163,7 @@
     </div>
 
   </div>
-  </div>
+</div>
 
 
   <div class="bottom-container body-text-light">

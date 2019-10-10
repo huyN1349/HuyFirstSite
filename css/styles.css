@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-bg {
   background-color: rgba(10,25,47,1) !important;
   color: rgb(220,220,220);
@@ -6,35 +10,38 @@
 body{
   background-color: rgba(10,25,47,1) !important;
   color: rgba(220,220,220,0.8);
+  font-size: 120%;
 }
 
 .top-container {
   max-width: 1000px;
-  padding: 100px 0 100px 0;
+  padding: 50px 0 50px 0;
   text-align: center;
 }
 
 .middle-container, .bottom-container {
   max-width: 1000px;
+  padding: 50px 0 50px 0;
 }
 
 .nav-icon {
   display: block;
   margin: auto;
+  height: 30px;
+  width: 30px;
 }
 
 .nav-text{
-  color: rgba(220,220,220,0.8);
-  font-size: 150%;
+  color: rgba(220,220,220,0.6);
 }
 
-.nav-hover:hover{
+.nav-text:hover, .nav-text:active, .nav-text:focus {
   color: #00adb5;
 }
 
 .body-text-light{
   color: rgba(220,220,220,0.8);
-  font-size: 150%;
+
 }
 
 .social-icon {
@@ -61,12 +68,8 @@ ul {
   color: #00adb5;
 }
 
-.resume, .portfolio, .contact-me, .skills {
+.experience, .portfolio, .contact-me, .skills, .education, .certificate {
   padding: 110px 20px 0 20px;
-}
-
-.indent-text {
-  padding: 0 0 0 0;
 }
 
 h2 {
@@ -75,14 +78,58 @@ h2 {
   font-weight: bold;
 }
 
+.contact-form {
+  max-width: 900px;
+}
+
 .contact-field {
   margin: 0 0 10px 0;
   background-color: #222831;
   color: #585858;
+  max-width: 900px;
 
 }
 .contact-field:focus {
   background-color: #222831;
   border: 1px solid #00adb5;
   color: white;
+}
+
+.btn-info {
+  background-color: rgba(10,25,47,1);
+  color: #00adb5;
+  border: 2px solid #00adb5;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.btn-info:hover {
+  background-color: rgba(0,173,181,0.1);
+  color: rgb(0,173,181);
+}
+
+.pentagon {
+background-color: #00adb5;
+-webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+height: 60px;
+width: 60px;
+position: relative;
+}
+
+.pentagon-overlay {
+content: '';
+-webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+height: 50px;
+width: 50px;
+background-color: rgba(10,25,47,1);
+display: block;
+position: absolute;
+top: 5px;
+left: 5px;
+padding: 11px;
+text-align: center;
+color: #00adb5;
+font-weight: bold;
 }
