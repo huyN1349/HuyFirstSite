@@ -13,6 +13,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
@@ -25,24 +26,18 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="nav nav-pills nav-fill ml-auto">
-        <!---
-          Need to add flaticon in the navbar
-          .nav-icon pushes text to next line
-          .nav-hover the background color changes
-          -->
-        <li class="nav-item"><a class="nav-link nav-text" href="#about-me"><img src="images/people-light.png" alt="people-light" class="nav-icon nav-text">Intro</a></li>
-        <li class="nav-item"><a class="nav-link nav-text" href="#portfolio"><img src="images/project-light.png" alt="project-light" class="nav-icon nav-text">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link nav-text" href="#skills"><img src="images/skill-light.png" alt="skill-light" class="nav-icon">Skills</a></li>
-        <li class="nav-item"><a class="nav-link nav-text" href="#experience"><img src="images/resume-light.png" alt="resume-light" class="nav-icon">Experience</a></li>
-        <li class="nav-item"><a class="nav-link nav-text" href="#contact-me"><img src="images/message-light.png" alt="message-light" class="nav-icon">Contact</a></li>
+      <ul class="nav navbar-nav nav-pills nav-fill ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#skills" onclick="hideNavBar()">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience" onclick="hideNavBar()">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects" onclick="hideNavBar()">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact-me" onclick="hideNavBar()">Contact</a></li>
       </ul>
     </div>
   </nav>
   <div class="d-flex justify-content-center align-items-center flex-column body-content">
     <div class="top-container" id="about-me">
       <div class="profile-pic text-center">
-        <img src="images/mypic-200.png" alt="mypic" class="mypic">
+        <img src="images/Profile_Pix.jpg" alt="mypic" class="mypic">
       </div>
       <div class="profile-text text-center body-text-light">
         <h1>Hi, I'm Huy Nguyen</h1>
@@ -52,7 +47,7 @@
         <ul class="nav">
           <li>
             <a href="#" class="social-media-a">
-              <span class="fa-stack fa-2x">
+              <span class="fa-stack fa-1x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
               </span>
@@ -60,7 +55,7 @@
           </li>
           <li>
             <a href="#" class="social-media-a">
-              <span class="fa-stack fa-2x">
+              <span class="fa-stack fa-1x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
               </span>
@@ -68,7 +63,7 @@
           </li>
           <li>
             <a href="#" class="social-media-a">
-              <span class="fa-stack fa-2x">
+              <span class="fa-stack fa-1x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
               </span>
@@ -79,97 +74,69 @@
     </div>
 
     <div class="middle-container body-text-light">
-
-
       <div class="skills" id="skills">
-        <h2 class="text-center"><span class="title-square"><i class="fas fa-cog"></i></span> Skills <span class="title-square"><i class="fas fa-cog"></i></span></h2>
+        <h3 class="highlight">Tech Toolkit</h3>
         <div class="skills-row">
-          <img class="" src="" alt="">
-          <h3>Lorem & Ipsum</h3>
           <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
         </div>
 
         <div class="skills-row">
-          <img class="" src="" alt="">
-          <h3>Lorem Ipsum Dolor</h3>
           <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
         </div>
       </div>
       <!-- Resume Section -->
       <div class="experience" id="experience">
-        <h2 class="text-left"><span class="title-square"><i class="fas fa-id-badge"></i></span> Experience <span class="title-square"><i class="fas fa-id-badge"></i></span></h2>
-      </div>
 
-  <div class="d-flex flex-row">
-    <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      <a class="nav-link nav-text" id="v-pills-job0-tab" data-toggle="pill" href="#v-pills-job0" role="tab" aria-controls="v-pills-job0" aria-selected="true">Bayer</a>
-      <a class="nav-link nav-text" id="v-pills-job2-tab" data-toggle="pill" href="#v-pills-job2" role="tab" aria-controls="v-pills-job2" aria-selected="false">SVCW</a>
-      <a class="nav-link nav-text" id="v-pills-job3-tab" data-toggle="pill" href="#v-pills-job3" role="tab" aria-controls="v-pills-job3" aria-selected="false">Intematix</a>
-    </div>
-    <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-job0" role="tabpanel" aria-labelledby="v-pills-job0-tab">Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat.</div>
-      <div class="tab-pane fade" id="v-pills-job2" role="tabpanel" aria-labelledby="v-pills-job2-tab">Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui.</div>
-      <div class="tab-pane fade" id="v-pills-job3" role="tabpanel" aria-labelledby="v-pills-job3-tab">Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat</div>
-    </div>
-  </div>
+        <h3 class="highlight">Awesome Experience</h3>
 
-  <div class="education" id="education">
-    <h2 class="text-center"><span class="title-square"><i class="fas fa-user-graduate"></i></span> Education <span class="title-square"><i class="fas fa-user-graduate"></i></span></h2>
-  </div>
-
-  <div class="certificate" id="certificate">
-    <h2 class="text-left"><span class="title-square"><i class="fas fa-award"></i></span> Certificates <span class="title-square"><i class="fas fa-award"></i></span></h2>
-  </div>
-
-
-  <div class="portfolio" id="portfolio">
-    <h2 class="text-center"><span class="title-square"><i class="fas fa-th-list"></i></span> Projects <span class="title-square"><i class="fas fa-th-list"></i></span></h2>
-    <div class="portfolio-row">
-      <img class="" src="" alt="">
-      <h3>Lorem & Ipsum</h3>
-      <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-    </div>
-
-    <div class="portfolio-row">
-      <img class="" src="" alt="">
-      <h3>Lorem Ipsum Dolor</h3>
-      <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-    <div class="contact-me" id="contact-me">
-      <h2 class="text-center"><span class="title-square"><i class="fas fa-quote-left"></i></span> Contact Me <span class="title-square"><i class="fas fa-quote-right"></i></span></h2>
-      <h3>Let's Keep In Touch</h3>
-      <div>
-        <form class="contact-form text-center" action="#" method="post">
-          <div class="form-group">
-            <input class="form-control contact-field" type="text" placeholder="Your Name">
-            <input class="form-control contact-field" type="text" placeholder="Company">
-            <input class="form-control contact-field" type="email" placeholder="Your Email">
-            <input class="form-control contact-field" type="text" placeholder="Your Phone Number">
-            <textarea class="form-control contact-field" name="name" rows="6" placeholder="Write Your Message"></textarea>
+        <div class="d-flex flex-row exp-container">
+          <div class="nav flex-column exp-content" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link" id="v-pills-job0-tab" data-toggle="pill" href="#v-pills-job0" role="tab" aria-controls="v-pills-job0" aria-selected="true">Bayer</a>
+            <a class="nav-link" id="v-pills-job2-tab" data-toggle="pill" href="#v-pills-job2" role="tab" aria-controls="v-pills-job2" aria-selected="false">SVCW</a>
+            <a class="nav-link" id="v-pills-job3-tab" data-toggle="pill" href="#v-pills-job3" role="tab" aria-controls="v-pills-job3" aria-selected="false">Intematix</a>
           </div>
-          <button type="submit" class="btn btn-info" name="submit">Email Me</button>
-        </form>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-job0" role="tabpanel" aria-labelledby="v-pills-job0-tab">Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit
+              excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et
+              cillum eu deserunt excepteur ea incididunt minim occaecat.</div>
+            <div class="tab-pane fade" id="v-pills-job2" role="tabpanel" aria-labelledby="v-pills-job2-tab">Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur
+              laborum qui.</div>
+            <div class="tab-pane fade" id="v-pills-job3" role="tabpanel" aria-labelledby="v-pills-job3-tab">Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat</div>
+          </div>
+        </div>
+      </div>
+      <div class="education" id="education">
+        <h3 class="highlight">All-Nighter Spots</h3>
 
       </div>
 
+
+
+      <div class="portfolio" id="projects">
+        <h3 class="highlight">Projects That Matter</h3>
+        <div class="portfolio-row">
+          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+        </div>
+
+        <div class="portfolio-row">
+          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+        </div>
+      </div>
+
+      <div class="contact-me text-center" id="contact-me">
+        <h3 class="text-center font-weight-bold text-white">Let's Keep In Touch</h3>
+        <div>
+          <form class="text-center" action="#" method="post">
+            <button type="submit" class="btn btn-info" name="submit">Email Me</button>
+          </form>
+      </div>
+    </div>
+  </div>
+
+    <div class="bottom-container text-center">
+      <p class="">© 2019 Copyright Huy Nguyen</p>
     </div>
 
-  </div>
-</div>
-
-
-  <div class="bottom-container body-text-light">
-    <p class="col-sm-12 text-center">© 2019 Copyright Huy Nguyen</p>
-  </div>
 
 </body>
 
