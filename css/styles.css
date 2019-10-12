@@ -173,7 +173,22 @@ h2 {
     font-size: 18px !important;
   }
 
+  .highlight {
+    justify-content: center;
+  }
+
   .highlight::after {
-    width: 130px;
+    width: 0px;
+  }
+
+  .profile-pic img {
+    max-width: 200px;
+    border-radius: 50%;
+  }
+
+  .profile-pic img:hover {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 4px solid #00adb5;
   }
 }
