@@ -1,15 +1,19 @@
-function hideNavBar(){
-    $('.navbar-collapse').collapse('hide');
-};
+$(document).click(function(event) {
+  var clickover = $(event.target);
+  var $navbar = $('.navbar-collapse');
+  if ($('.navbar-toggler').attr('aria-expanded') == "true") {
+    $navbar.collapse('hide');
+  }
+});
 
-(function($){
+(function($) {
   var $window = $(window);
-  function resize(){
-    if($window.width() < 992){
+
+  function resize() {
+    if ($window.width() < 992) {
       $('.exp-container').removeClass('flex-row').addClass('flex-column');
       $('.exp-content').removeClass('flex-column').addClass('flex-row');
-    }
-    else {
+    } else {
       $('.exp-content').removeClass('flex-row').addClass('flex-column');
       $('.exp-container').removeClass('flex-column').addClass('flex-row');
     }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Huy Nguyen - A Programmer by Night</title>
+  <title>Hello! I Am Huy Nguyen.</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/styles.css">
@@ -17,127 +17,190 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav-bg">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-bg">
     <a class="navbar-brand pentagon" href="#">
       <div class="pentagon-overlay">HN
       </div>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="#mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+
+    <div class="collapse navbar-collapse" id="mainNavBar">
       <ul class="nav navbar-nav nav-pills nav-fill ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#skills" onclick="hideNavBar()">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience" onclick="hideNavBar()">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects" onclick="hideNavBar()">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact-me" onclick="hideNavBar()">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact-me">Contact</a></li>
       </ul>
     </div>
   </nav>
   <div class="d-flex justify-content-center align-items-center flex-column body-content">
-    <div class="top-container" id="about-me">
-      <div class="profile-pic text-center">
-        <img src="images/Profile_Pix.jpg" alt="mypic" class="mypic">
+    <div class="top-container row" id="intro">
+      <div class="col-md-8 profile-text text-left body-text-light">
+        <h1>Hi! I'm Huy.</h1>
+        <h3>I am a project manager and a self-taught developer. I drive and build things that matter.</h3>
+
       </div>
-      <div class="profile-text text-center body-text-light">
-        <h1>Hi, I'm Huy Nguyen</h1>
-        <p>Project Manager | Lifelong Learner | Self-Taught Programmer</p>
-      </div>
-      <div class="social-media row justify-content-center">
-        <ul class="nav">
-          <li>
-            <a href="#" class="social-media-a">
-              <span class="fa-stack fa-1x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="social-media-a">
-              <span class="fa-stack fa-1x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="social-media-a">
-              <span class="fa-stack fa-1x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
+      <div class="col-md-4 profile-pic text-center justify-content-center">
+        <img src="https://picsum.photos/200" alt="mypic" class="mypic">
+
+
+        <div class="social-media row justify-content-center">
+          <ul class="nav">
+            <li>
+              <a href="#" class="social-media-a">
+                <span class="fa-stack fa-1x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-media-a">
+                <span class="fa-stack fa-1x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-media-a">
+                <span class="fa-stack fa-1x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="middle-container body-text-light">
-      <div class="skills" id="skills">
-        <h3 class="highlight">Tech Toolkit</h3>
-        <div class="skills-row">
-          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-        </div>
+      <div class="about" id="about">
+        <h3 class="highlight">About Me</h3>
+        <div class="about-row">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet tellus quis sem dapibus dictum at et quam. Sed porta magna sit amet nisi varius sodales. Quisque vitae tincidunt leo. Maecenas sodales eros quis metus condimentum ultricies. Proin nec lacus quis dui tincidunt rhoncus non sit amet urna. Aenean condimentum tincidunt odio, non aliquet lacus gravida sit amet. Phasellus in felis vitae purus semper malesuada.</p>
+          <p>Pellentesque dapibus elit vitae leo tincidunt, at dictum dolor vulputate. Aenean imperdiet dictum commodo. Maecenas pretium porttitor laoreet. Suspendisse at neque nec arcu scelerisque ultrices eu ac nibh. Maecenas iaculis, ipsum et lacinia egestas, felis mi mattis purus, a cursus libero ligula ut quam. Aenean vitae tincidunt augue, id ultricies odio. Praesent eget nisi ut velit tincidunt elementum. Morbi pretium velit eu lorem lobortis fermentum.</p>
 
-        <div class="skills-row">
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+          <p>Here are some of the technical skills I have been developing.</p>
+
+          <ul class="">
+            <li>Project Management</li>
+            <li>Stakeholder Management</li>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>HTML/CSS & Bootstrap</li>
+            <li>NodeJS</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+          </ul>
         </div>
       </div>
-      <!-- Resume Section -->
+
       <div class="experience" id="experience">
 
         <h3 class="highlight">Awesome Experience</h3>
 
         <div class="d-flex flex-row exp-container">
           <div class="nav flex-column exp-content" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link" id="v-pills-job0-tab" data-toggle="pill" href="#v-pills-job0" role="tab" aria-controls="v-pills-job0" aria-selected="true">Bayer</a>
-            <a class="nav-link" id="v-pills-job2-tab" data-toggle="pill" href="#v-pills-job2" role="tab" aria-controls="v-pills-job2" aria-selected="false">SVCW</a>
-            <a class="nav-link" id="v-pills-job3-tab" data-toggle="pill" href="#v-pills-job3" role="tab" aria-controls="v-pills-job3" aria-selected="false">Intematix</a>
+            <a class="nav-link nav-job" id="v-pills-job0-tab" data-toggle="pill" href="#v-pills-job0" role="tab" aria-controls="v-pills-job0" aria-selected="true">BEYA</a>
+            <a class="nav-link nav-job" id="v-pills-job2-tab" data-toggle="pill" href="#v-pills-job2" role="tab" aria-controls="v-pills-job2" aria-selected="false">HSCD</a>
+            <a class="nav-link nav-job" id="v-pills-job3-tab" data-toggle="pill" href="#v-pills-job3" role="tab" aria-controls="v-pills-job3" aria-selected="false">BNB</a>
           </div>
           <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-job0" role="tabpanel" aria-labelledby="v-pills-job0-tab">Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit
-              excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et
-              cillum eu deserunt excepteur ea incididunt minim occaecat.</div>
-            <div class="tab-pane fade" id="v-pills-job2" role="tabpanel" aria-labelledby="v-pills-job2-tab">Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur
-              laborum qui.</div>
-            <div class="tab-pane fade" id="v-pills-job3" role="tabpanel" aria-labelledby="v-pills-job3-tab">Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat</div>
+            <div class="tab-pane fade show active" id="v-pills-job0" role="tabpanel" aria-labelledby="v-pills-job0-tab">
+              <h5>Manager</h5>
+              <h6>Oct 2666 - Present</h6>
+              <p>
+                <ul>
+                  <li>Fusce in sem sit amet quam consequat efficitur nam non quam sodales, ultricies metus vitae, tincidunt velit.</li>
+                  <li>Aenean vestibulum libero a justo interdum, fermentum vulputate nibh posuere sed scelerisque metus eget tortor scelerisque sodales.</li>
+                  <li>Sed pellentesque sem at sem dapibus, in porttitor ligula consectetur nulla eget turpis rhoncus, tincidunt sem at, efficitur leo.</li>
+                  <li>Suspendisse molestie lacus eu dolor blandit, eu volutpat dui dictum duis malesuada velit vel turpis porttitor, in sollicitudin odio rhoncus..</li>
+                </ul>
+              </p>
+              <h5>Specialist</h5>
+              <h6>Jan 2515 - Oct 2666</h6>
+              <p>
+                <ul>
+                  <li>Maecenas varius ligula ac sem vehicula, eget placerat est vulputate in vestibulum nunc egestas, tristique lorem nec, tempor velit.</li>
+                  <li>Integer at ante imperdiet orci vulputate pharetra at sit amet diam nullam et mauris a velit aliquet condimentum vel id ipsum.</li>
+                  <li>Phasellus sed risus eget lectus condimentum lacinia sit amet dictum nisi aliquam in metus eleifend, venenatis lectus vel, feugiat tortor.</li>
+                </ul>
+              </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-job2" role="tabpanel" aria-labelledby="v-pills-job2-tab">
+              <h5>Analyst</h5>
+              <h6>Oct 2533 - Jan 2515</h6>
+              <p>
+                <ul>
+                  <li>Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint.</li>
+                  <li>Veniam sint duis incididunt do esse magna mollit excepteur laborum qui.</li>
+                  <li>Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod.</li>
+                  <li>Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur.</li>
+                </ul>
+              </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-job3" role="tabpanel" aria-labelledby="v-pills-job3-tab">
+              <h5>Engineer</h5>
+              <h6>Apr 2212 - Aug 2312</h6>
+              <p>
+                <ul>
+                  <li>Quisque eleifend venenatis metus, at placerat augue congue at. Sed sollicitudin dictum mauris quis auctor. Nunc quis dictum orci. Ut viverra, orci a tincidunt commodo, elit nulla feugiat justo, ut euismod ante lectus ac elit.</li>
+                  <li>Cras nec leo tellus. Nulla dictum erat tortor. Praesent sit amet diam interdum, pharetra sem at, porttitor lacus. Suspendisse tempus interdum auctor.</li>
+                  <li>Phasellus libero neque, tincidunt eget enim quis, sollicitudin sollicitudin mauris. Curabitur facilisis lacus ac mauris bibendum ultricies. Praesent iaculis, metus at condimentum hendrerit, odio velit vulputate massa, ut fringilla turpis sem id felis.</li>
+                </ul>
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="education" id="education">
-        <h3 class="highlight">All-Nighter Spots</h3>
-        <p>Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui.</p>
-        <p>Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod.</p>
-        <p>Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim etcillum eu deserunt excepteur ea incididunt minim occaecat.</p>
-      </div>
-
-
-
-      <div class="portfolio" id="projects">
-        <h3 class="highlight">Projects That Matter</h3>
-        <div class="portfolio-row">
-          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+        <h3 class="highlight">Where I Pull An All-Nighter</h3>
+        <div class="school">
+          <h5>Web Development</h5>
+          <h6>Self-Taught</h6>
+          <h6>2660 - Present</h6>
+          <p>Sed tempus mauris non maximus fermentum. Integer id blandit sem. Fusce ex leo, pulvinar id laoreet suscipit, vehicula sed elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo at magna luctus facilisis a ac risus. Suspendisse quis lorem dui. Sed accumsan vulputate ante, sit amet congue felis rhoncus at. Nullam finibus ex sit amet mattis tincidunt. Ut malesuada nibh elit, eu feugiat nunc interdum ut. Quisque ac eleifend ex.</p>
         </div>
 
-        <div class="portfolio-row">
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+        <div class="school">
+          <h5>Chemical Enigneering, M.S.</h5>
+          <h6>University of Gotham City</h6>
+          <h6>2239 - 2241</h6>
+          <p>Mauris maximus nec eros nec egestas. Fusce id sem nisl. Donec efficitur nibh sit amet mattis pulvinar. Vivamus nec imperdiet nisl. Suspendisse facilisis lobortis commodo. Curabitur pellentesque mauris mi, eget tincidunt velit iaculis blandit. Sed dictum, massa eu vestibulum sodales, ex dolor pretium lectus, eget malesuada ex mauris iaculis urna. Suspendisse porta dignissim elit et euismod. Proin non ligula consequat, dignissim leo ac, cursus elit. Sed pulvinar ex eget felis fringilla, a pulvinar magna pretium. Vestibulum sollicitudin lectus id sapien aliquam scelerisque. In vitae enim consequat, tincidunt ex sed, rutrum nibh.</p>
+        </div>
+
+        <div class="school">
+          <h5>Chemical Engineering, B.S.</h5>
+          <h6>University of Metropolis</h6>
+          <h6>2235 - 2239</h6>
+          <p>Morbi erat risus, ornare sit amet nibh eget, dignissim mollis sapien. Fusce molestie sed felis non placerat. Sed egestas massa quis sem sagittis tempus. Ut aliquam quam quis molestie commodo. Nunc ultrices bibendum magna, non scelerisque tellus tincidunt vitae. Vestibulum leo dui, fermentum in ipsum id, sodales volutpat turpis. Integer quis nibh egestas, accumsan magna eget, commodo eros. In accumsan ipsum sapien.</p>
         </div>
       </div>
 
-      <div class="contact-me text-center" id="contact-me">
-        <h3 class="text-center font-weight-bold text-white">Let's Keep In Touch</h3>
-        <div>
-          <form class="text-center" action="#" method="post">
-            <button type="submit" class="btn btn-info" name="submit">Email Me</button>
-          </form>
-      </div>
-    </div>
-  </div>
+        <div class="portfolio" id="portfolio">
+          <h3 class="highlight">Projects That Matter</h3>
+          COMING SOON...
+        </div>
 
-    <div class="bottom-container text-center">
-      <p class="">© 2019 Copyright Huy Nguyen</p>
-    </div>
+        <div class="contact-me text-center" id="contact-me">
+          <h3 class="text-center font-weight-bold text-white">Let's Keep In Touch</h3>
+          <div>
+            <form class="text-center" action="#" method="post">
+              <button type="submit" class="btn btn-info" name="submit">Email Me</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-container text-center">
+        <p class="">© 2019 Copyright Huy Nguyen</p>
+      </div>
 
 
 </body>

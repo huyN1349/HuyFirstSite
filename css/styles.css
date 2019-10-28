@@ -1,32 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo|Muli|Nunito+Sans&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
 
 .nav-bg {
   background-color: rgba(10, 25, 47, 1) !important;
-  color: rgb(220, 220, 220);
 }
 
 body {
   background-color: rgba(10, 25, 47, 1) !important;
-  color: rgba(220, 220, 220, 0.8);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 20px;
+  padding-top: 80px;
+  font-family: 'Muli', sans-serif;
+}
+
+#intro {
+  color: white;
+}
+
+#intro h3 {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .profile-pic img {
-  max-width: 300px;
+  max-width: 200px;
   border-radius: 50%;
 }
 
 .profile-pic img:hover {
-  max-width: 300px;
+  max-width: 200px;
   border-radius: 50%;
   border: 4px solid #00adb5;
 }
 
 .top-container {
   max-width: 1000px;
-  padding: 50px 0 50px 0;
+  padding: 50px;
   text-align: center;
 }
 
@@ -38,11 +49,13 @@ body {
 .nav-link {
   font-size: 18px;
   color: #00adb5;
+  font-weight: bold;
 }
 
 .nav-link:hover, .nav-link:active, .nav-link:focus {
   color: #00adb5;
-  background-color: rgba(0, 173, 181,0.3)
+  background-color: rgba(0, 173, 181,0.3);
+  font-weight: bold;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -63,6 +76,8 @@ body {
   width: 100%;
   white-space: nowrap;
   -webkit-box-align: center;
+  padding-top: 70px;
+  margin-top: -70px
 }
 
 .highlight::after {
@@ -74,6 +89,23 @@ body {
   background-color: rgba(0, 173, 181,0.6);
   margin-left: 20px;
   top: 15px;
+}
+
+.nav-job{
+  border-left-style: solid;
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-width: thick;
+  margin-right: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-job:hover, .nav-job:active, .nav-job:focus {
+  border-left-style: solid;
+  border-left-color: #00adb5;
+  border-width: thick;
+  margin-right: 30px;
+  color: #00adb5;
+  background-color: transparent;
 }
 
 /*styling the social media hover features*/
@@ -94,8 +126,8 @@ body {
   color: #00adb5;
 }
 
-.experience, .portfolio, .contact-me, .skills, .education, .certificate {
-  padding: 110px 20px 0 20px;
+#experience, #portfolio, #contact-me, #about, #education, #certificate {
+  padding: 0 20px 100px 20px;
 }
 
 h2 {
@@ -164,6 +196,101 @@ h2 {
   color: rgba(0, 173, 181, 0.6);
 }
 
+
+h5 {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+/*Border drawing effect for Education section*/
+.school {
+  padding: 25px;
+  margin-top: 10px;
+  border: 3px solid transparent;
+  position: relative;
+}
+
+.school::before {
+  content:'';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+}
+
+.school:hover::before {
+  animation: top-draw 1s linear forwards;
+}
+@keyframes top-draw {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #00adb5;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #00adb5;
+    border-right-color: #00adb5;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+.school::after {
+  content:'';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+}
+
+.school:hover::after {
+  animation: bottom-draw 1s linear forwards;
+}
+@keyframes bottom-draw {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #00adb5;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #00adb5;
+    border-left-color: #00adb5;
+  }
+}
+/* */
 @media screen and (max-width: 992px) {
   body {
     font-size: 20px;
@@ -175,6 +302,8 @@ h2 {
 
   .highlight {
     justify-content: center;
+    padding-top: 70px;
+    margin-top: -70px
   }
 
   .highlight::after {
@@ -184,11 +313,36 @@ h2 {
   .profile-pic img {
     max-width: 200px;
     border-radius: 50%;
+    border: 4px solid #00adb5;
   }
 
   .profile-pic img:hover {
     max-width: 200px;
-    border-radius: 50%;
-    border: 4px solid #00adb5;
+  }
+
+  .pentagon:hover {
+    background-color: rgba(0, 173, 181, 1);
+  }
+
+  .pentagon-overlay:hover {
+    color: rgba(0, 173, 181, 1);
+  }
+
+  .nav-job{
+    border-left-style: unset;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    margin: 0px 0px 10px 0px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .nav-job:hover, .nav-job:active, .nav-job:focus {
+    border-left-style: unset;
+    border-bottom-style: solid;
+    border-bottom-color: #00adb5;
+    border-width: thick;
+    margin: 0px 0px 10px 0px;
+    color: #00adb5;
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
