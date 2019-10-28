@@ -1,0 +1,25 @@
+{
+  "name": "huyfirstsite",
+  "version": "1.0.0",
+  "description": "My first website",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyN1349/HuyFirstSite.git"
+  },
+  "author": "Huy Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huyN1349/HuyFirstSite/issues"
+  },
+  "homepage": "https://github.com/huyN1349/HuyFirstSite#readme"
+}
