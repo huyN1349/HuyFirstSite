@@ -11,9 +11,17 @@ html {
 body {
   background-color: rgba(10, 25, 47, 1) !important;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 20px;
+  font-size: 2.5vmin;
   padding-top: 80px;
   font-family: 'Muli', sans-serif;
+}
+
+h3 {
+  font-size: 3.75vmin;
+}
+
+.about-row ul, .exp-desc ul {
+  padding: 2.5%;
 }
 
 #intro {
@@ -132,7 +140,7 @@ body {
 
 h2 {
   padding: 0 0 40px 0;
-  font-size: 180%;
+  /* font-size: 180%; */
   font-weight: bold;
 }
 
@@ -153,7 +161,7 @@ h2 {
   background-color: rgba(10, 25, 47, 1);
   color: #00adb5;
   border: 2px solid #00adb5;
-  font-size: 20px;
+  /* font-size: 20px; */
   justify-content: center;
 }
 
@@ -205,7 +213,7 @@ h5 {
 
 /*Border drawing effect for Education section*/
 .school {
-  padding: 25px;
+  padding: 3%;
   margin-top: 10px;
   border: 3px solid transparent;
   position: relative;
@@ -291,13 +299,21 @@ h5 {
   }
 }
 /* */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 500px) {
   body {
-    font-size: 20px;
+    font-size: 4vmin;
+  }
+
+  h3 {
+    font-size: 5.5vmin;
+  }
+
+  h5 {
+    font-size: 4.5vmin;
   }
 
   .nav-link {
-    font-size: 18px !important;
+    /* font-size: 18px !important; */
   }
 
   .highlight {
@@ -329,6 +345,7 @@ h5 {
   }
 
   .nav-job{
+    font-size: 4.5vmin;
     border-left-style: unset;
     border-bottom-style: solid;
     border-bottom-color: rgba(255, 255, 255, 0.5);
