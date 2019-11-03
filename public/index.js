@@ -6,11 +6,11 @@ $(document).click(function(event) {
   }
 });
 
-(function($) {
+$(document).ready(function($) {
   var $window = $(window);
 
   function resize() {
-    if ($window.width() < 500) {
+    if ($window.width() < 1000) {
       $('.exp-container').removeClass('flex-row').addClass('flex-column');
       $('.exp-content').removeClass('flex-column').addClass('flex-row');
     } else {
@@ -19,4 +19,5 @@ $(document).click(function(event) {
     }
   }
   $window.resize(resize).trigger('resize');
-})(jQuery);
+  resize();
+});
