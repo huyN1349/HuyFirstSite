@@ -29,7 +29,7 @@ h3 {
 }
 
 #intro h3 {
-    color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .profile-pic img {
@@ -62,7 +62,7 @@ h3 {
 
 .nav-link:hover, .nav-link:active, .nav-link:focus {
   color: #00adb5;
-  background-color: rgba(0, 173, 181,0.3);
+  background-color: rgba(0, 173, 181, 0.3);
   font-weight: bold;
 }
 
@@ -73,7 +73,7 @@ h3 {
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #00adb5;
-  background-color: rgba(0, 173, 181,0.3)
+  background-color: rgba(0, 173, 181, 0.3)
 }
 
 .highlight {
@@ -94,12 +94,12 @@ h3 {
   width: 200px;
   height: 1px;
   position: relative;
-  background-color: rgba(0, 173, 181,0.6);
+  background-color: rgba(0, 173, 181, 0.6);
   margin-left: 20px;
   top: 15px;
 }
 
-.nav-job{
+.nav-job {
   border-left-style: solid;
   border-left-color: rgba(255, 255, 255, 0.5);
   border-width: thick;
@@ -123,7 +123,7 @@ h3 {
 }
 
 .social-media-a:hover {
-  color: rgba(0, 173, 181,0.6);
+  color: rgba(0, 173, 181, 0.6);
 }
 
 .header-icon-bg {
@@ -204,12 +204,10 @@ h2 {
   color: rgba(0, 173, 181, 0.6);
 }
 
-
 h5 {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.75);
 }
-
 
 /*Border drawing effect for Education section*/
 .school {
@@ -220,7 +218,7 @@ h5 {
 }
 
 .school::before {
-  content:'';
+  content: '';
   position: absolute;
   top: -3px;
   left: -3px;
@@ -232,6 +230,7 @@ h5 {
 .school:hover::before {
   animation: top-draw 1s linear forwards;
 }
+
 @keyframes top-draw {
   0% {
     width: 0;
@@ -241,6 +240,7 @@ h5 {
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
+
   50% {
     width: 100%;
     height: 0;
@@ -249,6 +249,7 @@ h5 {
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
+
   100% {
     width: 100%;
     height: 100%;
@@ -260,7 +261,7 @@ h5 {
 }
 
 .school::after {
-  content:'';
+  content: '';
   position: absolute;
   top: -3px;
   left: -3px;
@@ -272,6 +273,7 @@ h5 {
 .school:hover::after {
   animation: bottom-draw 1s linear forwards;
 }
+
 @keyframes bottom-draw {
   0% {
     width: 0;
@@ -281,6 +283,7 @@ h5 {
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
+
   50% {
     width: 0;
     height: 100%;
@@ -289,6 +292,7 @@ h5 {
     border-bottom-color: transparent;
     border-left-color: #00adb5;
   }
+
   100% {
     width: 100%;
     height: 100%;
@@ -298,6 +302,7 @@ h5 {
     border-left-color: #00adb5;
   }
 }
+
 /* */
 .project-wrap {
   margin-top: 5%;
@@ -317,19 +322,20 @@ h5 {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(0, 173, 181, 0.7);
+  background-color: rgba(0, 173, 181, 0.4);
+}
+
+.project-content-odd, .project-content-even {
+  background-color: rgba(10, 25, 47, 1);
+  z-index: 999;
 }
 
 .project-content-odd {
-  background-color: rgba(10, 25, 47, 1);
   margin-left: -4%;
-  z-index: 999;
 }
 
 .project-content-even {
-  background-color: rgba(10, 25, 47, 1);
   margin-right: -4%;
-  z-index: 999;
 }
 
 .project-description {
@@ -346,6 +352,22 @@ h5 {
   font-weight: bold;
   font-size: 1.5vmin;
 }
+
+/* Animation */
+[data-aos="spin"] {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  opacity: 0;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+[data-aos="spin"].aos-animate {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  opacity: 1;
+}
+
 @media screen and (max-width: 1000px) {
   body {
     font-size: 4vmin;
@@ -358,6 +380,7 @@ h5 {
   h5 {
     font-size: 4.5vmin;
   }
+
   h6 {
     font-size: 3.5vmin;
   }
@@ -390,7 +413,7 @@ h5 {
     color: rgba(0, 173, 181, 1);
   }
 
-  .nav-job{
+  .nav-job {
     font-size: 4.5vmin;
     border-left-style: unset;
     border-bottom-style: solid;
@@ -407,6 +430,24 @@ h5 {
     margin: 0px 0px 10px 0px;
     color: #00adb5;
     /* background-color: rgba(255, 255, 255, 0.2); */
+  }
+
+  .project-content-odd, .project-content-even {
+    background-color: rgba(10, 25, 47, 0.6);
+  }
+
+  .project-content-odd {
+    margin-left: -100%;
+  }
+
+  .project-content-even {
+    margin-right: -100%;
+  }
+
+  .project-skills {
+    color: #00adb5;
+    font-weight: bold;
+    font-size: 2.5vmin;
   }
 }
 
@@ -427,6 +468,12 @@ h5 {
     font-size: 1.75vmin;
   }
 
-.nav-job {
-  font-size: 2.75vmin;
-}
+  .nav-job {
+    font-size: 2.75vmin;
+  }
+
+  .project-skills {
+    color: #00adb5;
+    font-weight: bold;
+    font-size: 1.8vmin;
+  }

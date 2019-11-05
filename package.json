@@ -4,6 +4,7 @@
   "description": "My first website",
   "main": "app.js",
   "dependencies": {
+    "aos": "^2.3.4",
     "body-parser": "^1.19.0",
     "ejs": "^2.7.1",
     "express": "^4.17.1"

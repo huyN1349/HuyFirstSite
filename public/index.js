@@ -10,7 +10,7 @@ $(document).ready(function($) {
   var $window = $(window);
 
   function resize() {
-    if ($window.width() < 1000) {
+    if ($window.width() < 988) {
       $('.exp-container').removeClass('flex-row').addClass('flex-column');
       $('.exp-content').removeClass('flex-column').addClass('flex-row');
     } else {
