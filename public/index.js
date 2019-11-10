@@ -21,3 +21,27 @@ $(document).ready(function($) {
   $window.resize(resize).trigger('resize');
   resize();
 });
+
+// Adding animation for schools when in viewport
+$(document).scroll(function() {
+  $(".school").each(function() {
+      if (!isInView($(this))) {
+        $(this).addClass("no-before");
+        $(this).addClass("no-after");
+      } else {
+        $(this).removeClass("no-before");
+        $(this).removeClass("no-after");
+      }
+    }
+  )
+})
+
+function isInView(elem) {
+  var docViewTop = $(window).scrollTop();
+  var docViewBottom = docViewTop + $(window).height();
+
+  var elemTop = $(elem).offset().top;
+  var elemBottom = elemTop + $(elem).height();
+
+  return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}

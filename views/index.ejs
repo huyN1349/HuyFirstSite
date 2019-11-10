@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -29,7 +30,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="mainNavBar">
+    <div class="collapse navbar-collapse" id="mainNavBar" data-aos="fadeDown">
       <ul class="nav navbar-nav nav-pills nav-fill ml-auto">
         <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
@@ -41,13 +42,13 @@
   </nav>
   <div class="d-flex justify-content-center align-items-center flex-column body-content">
     <div class="top-container row" id="intro">
-      <div class="col-md-8 profile-text text-left body-text-light" data-aos="zoom-in-up" data-aos-delay="200">
+      <div class="col-md-8 profile-text text-left body-text-light" data-aos="fadeDown" data-aos-delay="100">
         <h1>Hi! I'm Huy.</h1>
         <h3>I am a project manager and a self-taught developer. I drive and build things that matter.</h3>
 
       </div>
-      <div class="col-md-4 profile-pic text-center justify-content-center" data-aos="zoom-in-up" data-aos-delay="200">
-        <img src="https://picsum.photos/200" alt="mypic" class="mypic">
+      <div class="col-md-4 profile-pic text-center justify-content-center" data-aos="fadeDown" data-aos-delay="100">
+        <img src="/images/Profile_Pix.jpg" alt="mypic" class="mypic">
 
 
         <div class="social-media row justify-content-center">
@@ -83,16 +84,18 @@
 
     <div class="middle-container body-text-light">
       <div class="section-title" id="about">
-        <h3 class="highlight" data-aos="fade-down" data-aos-easing="ease-out" data-aos-delay="500">About Me</h3>
+        <h3 class="highlight" data-aos="fadeDown" data-aos-easing="ease-out" data-aos-delay="150">About Me</h3>
         <div class="about-row">
-          <p data-aos="fade-down" data-aos-easing="ease-out" data-aos-delay="400" data-aos-duration="250">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet tellus quis sem dapibus dictum at et quam. Sed porta magna sit amet nisi varius sodales. Quisque vitae tincidunt leo. Maecenas sodales eros quis metus condimentum
+          <p data-aos="fadeDown" data-aos-easing="ease-out" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet tellus quis sem dapibus dictum at et quam. Sed porta magna sit amet nisi varius sodales.
+            Quisque vitae tincidunt leo. Maecenas sodales eros quis metus condimentum
             ultricies. Proin nec lacus quis dui tincidunt rhoncus non sit amet urna. Aenean condimentum tincidunt odio, non aliquet lacus gravida sit amet. Phasellus in felis vitae purus semper malesuada.</p>
-          <p data-aos="fade-down" data-aos-easing="ease-out" data-aos-delay="500" data-aos-duration="250">Pellentesque dapibus elit vitae leo tincidunt, at dictum dolor vulputate. Aenean imperdiet dictum commodo. Maecenas pretium porttitor laoreet. Suspendisse at neque nec arcu scelerisque ultrices eu ac nibh. Maecenas iaculis, ipsum et
+          <p data-aos="fadeDown" data-aos-easing="ease-out" data-aos-delay="250">Pellentesque dapibus elit vitae leo tincidunt, at dictum dolor vulputate. Aenean imperdiet dictum commodo. Maecenas pretium porttitor laoreet. Suspendisse at neque nec
+            arcu scelerisque ultrices eu ac nibh. Maecenas iaculis, ipsum et
             lacinia egestas, felis mi mattis purus, a cursus libero ligula ut quam. Aenean vitae tincidunt augue, id ultricies odio. Praesent eget nisi ut velit tincidunt elementum. Morbi pretium velit eu lorem lobortis fermentum.</p>
 
-          <p data-aos="fade-down" data-aos-easing="ease-out" data-aos-delay="600" data-aos-duration="250">Here are some of the technical skills I have been developing.</p>
+          <p data-aos="fadeDown" data-aos-easing="ease-out" data-aos-delay="300">Here are some of the technical skills I have been developing.</p>
 
-          <ul data-aos="fade-down" data-aos-easing="ease-out" data-aos-delay="700" data-aos-duration="250">
+          <ul data-aos="fadeDown" data-aos-easing="ease-out" data-aos-delay="350">
             <li>Project Management</li>
             <li>Stakeholder Management</li>
             <li>Javascript</li>
@@ -105,17 +108,17 @@
         </div>
       </div>
 
-      <div class="section-title" id="experience" >
+      <div class="section-title" id="experience">
 
         <h3 class="highlight" data-aos="zoom-in" data-aos-delay="300">Awesome Experience</h3>
 
         <div class="d-flex flex-row exp-container">
-          <div class="nav flex-column exp-content" id="v-pills-tab" role="tablist" aria-orientation="vertical" data-aos="fade-right" data-aos-delay="600">
+          <div class="nav flex-column exp-content" id="v-pills-tab" role="tablist" aria-orientation="vertical" data-aos="fadeDown" data-aos-delay="600" data-aos-duration="1000">
             <a class="nav-link nav-job" id="v-pills-job0-tab" data-toggle="pill" href="#v-pills-job0" role="tab" aria-controls="v-pills-job0" aria-selected="true">BEYA</a>
             <a class="nav-link nav-job" id="v-pills-job2-tab" data-toggle="pill" href="#v-pills-job2" role="tab" aria-controls="v-pills-job2" aria-selected="false">HSCD</a>
             <a class="nav-link nav-job" id="v-pills-job3-tab" data-toggle="pill" href="#v-pills-job3" role="tab" aria-controls="v-pills-job3" aria-selected="false">BNB</a>
           </div>
-          <div class="tab-content" id="v-pills-tabContent" data-aos="fade-left" data-aos-delay="600">
+          <div class="tab-content" id="v-pills-tabContent" data-aos="fadeDown" data-aos-delay="1000" data-aos-duration="1000">
             <div class="tab-pane fade show active exp-desc" id="v-pills-job0" role="tabpanel" aria-labelledby="v-pills-job0-tab">
               <h5>Manager</h5>
               <h6>Oct 2666 - Present</h6>
@@ -166,16 +169,17 @@
       </div>
       <div class="section-title" id="education">
         <h3 class="highlight" data-aos="zoom-in" data-aos-delay="300">Where I Pull An All-Nighter</h3>
-        <div class="school" data-aos="zoom-in-down" data-aos-delay="500">
+        <div class="school">
           <h5>Web Development</h5>
           <h6>Self-Taught</h6>
           <h6>2660 - Present</h6>
           <p>Sed tempus mauris non maximus fermentum. Integer id blandit sem. Fusce ex leo, pulvinar id laoreet suscipit, vehicula sed elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo at magna
             luctus facilisis a ac risus. Suspendisse quis lorem dui. Sed accumsan vulputate ante, sit amet congue felis rhoncus at. Nullam finibus ex sit amet mattis tincidunt. Ut malesuada nibh elit, eu feugiat nunc interdum ut. Quisque ac eleifend
             ex.</p>
+
         </div>
 
-        <div class="school" data-aos="zoom-in-down" data-aos-delay="900">
+        <div class="school">
           <h5>Chemical Enigneering, M.S.</h5>
           <h6>University of Gotham City</h6>
           <h6>2239 - 2241</h6>
@@ -184,7 +188,7 @@
             felis fringilla, a pulvinar magna pretium. Vestibulum sollicitudin lectus id sapien aliquam scelerisque. In vitae enim consequat, tincidunt ex sed, rutrum nibh.</p>
         </div>
 
-        <div class="school" data-aos="zoom-in-down" data-aos-delay="1400">
+        <div class="school">
           <h5>Chemical Engineering, B.S.</h5>
           <h6>University of Metropolis</h6>
           <h6>2235 - 2239</h6>
@@ -194,104 +198,104 @@
       </div>
 
       <div class="section-title" id="portfolio">
-        <h3 class="highlight" data-aos="zoom-in" data-aos-delay="500">Projects That Matter</h3>
+        <h3 class="highlight" data-aos="zoom-in" data-aos-delay="300">Projects That Matter</h3>
         <div class="project-wrap row">
-            <div class="col-lg project-photo-odd-wrap order-first" data-aos="fade-right" data-aos-delay="1000">
-              <div class="row">
-                <div class="project-photo align-middle">
-                  <img src="https://picsum.photos/500/300">
-                </div>
+          <div class="col-lg project-photo-odd-wrap order-first" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+            <div class="row">
+              <div class="project-photo align-middle">
+                <img src="https://picsum.photos/500/300">
               </div>
             </div>
+          </div>
 
-            <div class="col-lg project-content-odd order-last align-self-center" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1000">
-              <div class="row project-title align-items-start">
-                <div class="col-8 text-center project-title">
-                  Project 1
-                </div>
-                <div class="col-4 text-right">
-                  <a href="#" class="links">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                  <a href="#" class="links">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-
+          <div class="col-lg project-content-odd order-last align-self-center" data-aos="fade-down" data-aos-delay="1500" data-aos-duration="1000">
+            <div class="row project-title align-items-start">
+              <div class="col-8 text-center project-title">
+                Project 1
               </div>
-              <div class="row align-items-center project-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus egestas libero, id euismod mauris tempor sit amet. Duis lobortis arcu non metus sollicitudin maximus. Nullam finibus ex eu libero ultrices, eget ullamcorper quam
-                imperdiet.
+              <div class="col-4 text-right">
+                <a href="#" class="links">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="links">
+                  <i class="fab fa-github"></i>
+                </a>
               </div>
 
-              <div class="row align-items-end project-skills">
-                <div class="col text-center">
-                  HTML/CSS
-                </div>
-                <div class="col text-center">
-                  Bootstrap
-                </div>
-                <div class="col text-center">
-                  JQuery
-                </div>
+            </div>
+            <div class="row align-items-center project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus egestas libero, id euismod mauris tempor sit amet. Duis lobortis arcu non metus sollicitudin maximus. Nullam finibus ex eu libero ultrices, eget ullamcorper quam
+              imperdiet.
+            </div>
+
+            <div class="row align-items-end project-skills">
+              <div class="col text-center">
+                HTML/CSS
+              </div>
+              <div class="col text-center">
+                Bootstrap
+              </div>
+              <div class="col text-center">
+                JQuery
               </div>
             </div>
+          </div>
         </div>
 
         <div class="project-wrap row">
-            <div class="col-lg project-photo-even-wrap order-last" data-aos="fade-left" data-aos-delay="1500">
-              <div class="row">
-                <div class="project-photo align-middle">
-                  <img src="https://picsum.photos/500/300">
-                </div>
+          <div class="col-lg project-photo-even-wrap order-last" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+            <div class="row">
+              <div class="project-photo align-middle">
+                <img src="https://picsum.photos/500/300">
               </div>
             </div>
+          </div>
 
-            <div class="col-lg project-content-even align-self-center order-first" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="1000">
-              <div class="row project-title align-items-start">
-                <div class="col-8 text-center project-title">
-                  Project 2
-                </div>
-                <div class="col-4 text-right">
-                  <a href="#" class="links">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                  <a href="#" class="links">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-
+          <div class="col-lg project-content-even align-self-center order-first" data-aos="fade-down" data-aos-delay="1800" data-aos-duration="1000">
+            <div class="row project-title align-items-start">
+              <div class="col-8 text-center project-title">
+                Project 2
               </div>
-              <div class="row align-items-center project-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus egestas libero, id euismod mauris tempor sit amet. Duis lobortis arcu non metus sollicitudin maximus. Nullam finibus ex eu libero ultrices, eget ullamcorper quam
-                imperdiet.
+              <div class="col-4 text-right">
+                <a href="#" class="links">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="links">
+                  <i class="fab fa-github"></i>
+                </a>
               </div>
 
-              <div class="row align-items-end project-skills">
-                <div class="col text-center">
-                  HTML/CSS
-                </div>
-                <div class="col text-center">
-                  Bootstrap
-                </div>
-                <div class="col text-center">
-                  JQuery
-                </div>
-                <div class="col text-center">
-                  NodeJS
-                </div>
-                <div class="col text-center">
-                  Express
-                </div>
+            </div>
+            <div class="row align-items-center project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus egestas libero, id euismod mauris tempor sit amet. Duis lobortis arcu non metus sollicitudin maximus. Nullam finibus ex eu libero ultrices, eget ullamcorper quam
+              imperdiet.
+            </div>
+
+            <div class="row align-items-end project-skills">
+              <div class="col text-center">
+                HTML/CSS
+              </div>
+              <div class="col text-center">
+                Bootstrap
+              </div>
+              <div class="col text-center">
+                JQuery
+              </div>
+              <div class="col text-center">
+                NodeJS
+              </div>
+              <div class="col text-center">
+                Express
               </div>
             </div>
+          </div>
         </div>
 
       </div>
 
       <div class="section-title text-center" id="contact-me">
-        <h3 class="text-center font-weight-bold text-white" data-aos="fade-down" data-aos-delay="1000">Let's Keep In Touch</h3>
-        <div data-aos="spin" data-aos-delay="1500" data-aos-duration="1500">
+        <h3 class="text-center font-weight-bold text-white" data-aos="fadeDown" data-aos-delay="400">Let's Keep In Touch</h3>
+        <div data-aos="spin" data-aos-delay="600" data-aos-duration="1300">
           <form class="text-center" action="#" method="post">
             <button type="submit" class="btn btn-info" name="submit">Email Me</button>
           </form>
@@ -305,7 +309,7 @@
 
     <script type="text/javascript">
       AOS.init({
-        duration: 600,
+        duration: 400,
       })
     </script>
 </body>
