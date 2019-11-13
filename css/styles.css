@@ -334,7 +334,7 @@ h5 {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(0, 173, 181, 0.4);
+  background-color: rgba(0, 173, 181, 0.25);
 }
 
 .project-content-odd, .project-content-even {
@@ -465,11 +465,11 @@ h5 {
   }
 
   .project-photo img {
-    opacity: 0.2;
+    opacity: 0.8;
   }
 
   .project-content-odd, .project-content-even {
-    background-color: rgba(10, 25, 47, 0.8);
+    background-color: rgba(10, 25, 47, 0.75);
   }
 
   .project-content-odd {
